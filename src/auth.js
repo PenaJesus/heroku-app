@@ -4,7 +4,7 @@ let bcrypt = require("bcrypt");
 let db = require("./db");
 let jwtSecret = process.env.JWT_SECRET;
 
-const { param } = require("express/lib/request");
+
 
 //this function should check if the request has a valid JWT Token
 let checkJWT = function (req, res, next) {

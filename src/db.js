@@ -1,4 +1,4 @@
-const e = require("express");
+const express = require("express");
 let mysql = require("mysql");
 
 let connection = mysql.createPool({

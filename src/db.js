@@ -7,7 +7,7 @@ let connection = mysql.createPool({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME
 });
-
+console.log("DBHOST = ",process.env.DB_HOST);
 connection.query("select now()", function(err, rows){
   if(err){
     console.log("Failed to create DB connection", err);
